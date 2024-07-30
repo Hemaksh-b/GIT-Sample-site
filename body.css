@@ -1,0 +1,162 @@
+:root{
+    --ok2: rgb(63, 58, 58);
+    --ok22: grey;
+}
+
+@media screen and (max-width: 730px) {
+    .box-outline{
+        width: 160px !important;
+    }
+
+    
+    #sideline{
+        width: 160px !important;
+    }
+    
+}
+
+
+@media screen and (max-width: 1240px){
+    .image-outline{
+        width: 156px;
+        height: 155px;
+    }
+    
+}
+
+@media screen and (min-width: 1240px) {
+    .image-outline{
+        height: 80px !important;
+        width: 80px !important;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: beige;
+}
+
+header{
+    position: sticky;
+    background-color: var(--ok2);
+    color: beige;
+}
+
+#nav-list{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+#nav-list>li{
+    list-style: none;
+
+
+}
+
+.box-side{
+    /* border: 1px solid black; */
+    list-style: none;
+    margin: 11vh 0;
+    
+}
+
+.box-outline{
+    width: 22vw;
+    height: 100%;
+    /* padding: ; */
+    border: 1px solid black;
+    text-align: center;
+}
+
+.box-side li{
+    padding: 15px;
+}
+
+#sideline{
+    border: 1px solid black;
+    width: 21.8vw;
+    margin: 0;
+    padding: 0;
+}
+
+#blank{
+    padding: 2px;
+    margin: 10px;
+    background-color: var(--ok22);
+    outline: 2px solid black;
+}
+
+.sticky-ball{
+    position: fixed;
+    height: 90px;
+    width: 250px;
+    border: 2px solid white;
+    border-radius: 20px;
+    bottom: 30px;
+    right: 20px;
+    background-color: var(--ok2);
+    padding: 20px;
+}
+
+body{
+    background-color: var(--ok22);
+    /* flex-wrap: wrap; */
+    /* display: flex; */
+}
+
+::placeholder{
+    color: black;
+}
+
+.id-elem-1{
+    display: flex;
+}
+
+.outline{
+    border: 1px solid black;
+    margin: 2px;
+}
+
+
+footer{
+    background-color: var(--ok2);
+    height: 250px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+
+body{
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.elem1{
+    height: fit-content;
+    padding: 20px;
+    display: block;
+}
+
+.elem2{
+    border: 1px solid black;
+    display: block;
+    height: fit-content;
+    padding: 2px;
+}
+
+#logo-img{
+    height: 30px;
+    size: border-box;
+}
+
+.outline p::first-letter{
+    font-weight: 200;
+}
+
+.overflow--{
+    text-overflow: clip;
+    overflow: hidden;
+}
